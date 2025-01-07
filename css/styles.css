@@ -1548,13 +1548,13 @@ input[type='checkbox'] {
 	left: 0;
 	width: 1.75rem;
 	height: 1.75rem;
-	background: url('../images/hexagon-green.svg') center center no-repeat;
+	background: url('../img/hexagon-green.svg') center center no-repeat;
 	background-size: 1.75rem 1.75rem;
 	transition: all 0.2s ease;
 }
 
 .basic-2 .fa-stack:hover .hexagon {
-	background: url('../images/hexagon-white.svg') center center no-repeat;
+	background: url('../img/hexagon-white.svg') center center no-repeat;
 	background-size: 1.75rem 1.75rem;
 }
 
@@ -2049,18 +2049,18 @@ a:hover.back-to-top {
 		width: 1.625rem;
 		height: 1.625rem;
 		position: absolute;
-		background: url('../images/hexagon-green.svg') center center no-repeat;
+		background: url('../img/hexagon-green.svg') center center no-repeat;
 		background-size: 1.625rem 1.625rem;
 		transition: all 0.2s ease;
 	}
 
 	.navbar-custom .fa-stack:hover .hexagon {
-		background: url('../images/hexagon-white.svg') center center no-repeat;
+		background: url('../img/hexagon-white.svg') center center no-repeat;
 		background-size: 1.625rem 1.625rem;
 	}
 	
 	.navbar-custom .fa-stack-1x {
-		font-size: 0.6875rem;
+		font-size: 0.8rem;
 		line-height: 1.625rem;
 		color: #fff;
 		transition: all 0.2s ease;
