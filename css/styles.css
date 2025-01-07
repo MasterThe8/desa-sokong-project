@@ -983,8 +983,8 @@ input[type='checkbox'] {
 	max-width: 90%;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 0;
-	padding-bottom: 1.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .accordion h2 {
