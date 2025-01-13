@@ -801,6 +801,39 @@ input[type='checkbox'] {
 	margin-bottom: 1.25rem;
 }
 
+/*********************/
+/*    04.2. Header 2    */
+/*********************/
+.header2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../img/header-img.jpg') center center no-repeat;
+	background-size: auto;
+}
+
+.header2 .header2-content {
+	padding-top: 8rem;
+	padding-bottom: 2.125rem;
+	text-align: center;
+}
+
+.header2 .text-container {
+	margin-bottom: 3rem;
+}
+
+.header2 h1 {
+	margin-bottom: 0.5rem;
+	color: #fff;
+}
+
+.header2 .p-large {
+	margin-bottom: 2rem;
+	color: #dfe5ec;
+}
+
+.header2 .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+
 
 /*********************/
 /*     05. Intro     */
@@ -1858,7 +1891,7 @@ a:hover.back-to-top {
 	.navbar-custom {
 		padding: 2.125rem 1.5rem 2.125rem 2rem;
 		box-shadow: none;
-        background: transparent;
+        background: rgba(0, 0, 0, 0);
 	}
 	
 	.navbar-custom .navbar-brand.logo-text {
@@ -1919,7 +1952,6 @@ a:hover.back-to-top {
 		width: 84%;
 	}
 	/* end of navigation */
-
 
 	/* Header */
 	.header .header-content {
@@ -2069,8 +2101,6 @@ a:hover.back-to-top {
 	.navbar-custom .fa-stack:hover .fa-stack-1x {
 		color: #14bf98;
 	}
-	/* end of navigation */
-
 
 	/* Header */
 	.header .header-content {
@@ -2450,4 +2480,37 @@ a:hover.back-to-top {
 .head-budaya {
 	text-align: center;
 	margin: 50px 0;
+}
+
+.margintop {
+	margin-top: 50px;
+}
+
+.location-text-title {
+	text-align: center;
+}
+
+.maps-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.maps-location iframe {
+    width: 80%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .maps-location {
+        height: auto;
+        padding: 20px;
+    }
+
+    .maps-location iframe {
+        width: 90%;
+        height: 300px;
+    }
 }
