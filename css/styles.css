@@ -805,7 +805,7 @@ input[type='checkbox'] {
 /*    04.2. Header 2    */
 /*********************/
 .header2 {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../img/header-img.jpg') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../img/bukit-murjumeneng-1.png') center center no-repeat;
 	background-size: auto;
 }
 
@@ -2477,7 +2477,7 @@ a:hover.back-to-top {
 /* end of min-width width 1200px */
 
 
-.head-budaya {
+.h2-title {
 	text-align: center;
 	margin: 50px 0;
 }
@@ -2513,4 +2513,124 @@ a:hover.back-to-top {
         width: 90%;
         height: 300px;
     }
+}
+
+
+/* Gallery Container */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Carousel */
+.carousel-wrapper {
+    position: relative;
+    width: 80%;
+}
+
+.carousel {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carousel ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    width: 500%;
+}
+
+.carousel li {
+    flex: 1;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Navigation Dots */
+.nav-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-dot {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.nav-dot:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+#slide1:checked ~ .nav-dots .nav-dot:nth-child(1),
+#slide2:checked ~ .nav-dots .nav-dot:nth-child(2),
+#slide3:checked ~ .nav-dots .nav-dot:nth-child(3),
+#slide4:checked ~ .nav-dots .nav-dot:nth-child(4),
+#slide5:checked ~ .nav-dots .nav-dot:nth-child(5) {
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+/* Arrows */
+.left-arrow, .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    opacity: 0.7;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.left-arrow {
+    left: 15px;
+}
+
+.right-arrow {
+    right: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-wrapper {
+        width: 95%;
+    }
+
+    .nav-dot {
+        width: 12px;
+        height: 12px;
+    }
+
+    .left-arrow, .right-arrow {
+        font-size: 25px;
+    }
+}
+
+
+.desc-text-justify{
+	text-align: justify;
 }
