@@ -834,6 +834,73 @@ input[type='checkbox'] {
 	margin-bottom: 1.25rem;
 }
 
+/*********************/
+/*    04.3. Header 3    */
+/*********************/
+.header3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../img/pantai-karang-atas/1.jpg') center center no-repeat;
+	background-size: auto;
+}
+
+.header3 .header3-content {
+	padding-top: 8rem;
+	padding-bottom: 2.125rem;
+	text-align: center;
+}
+
+.header3 .text-container {
+	margin-bottom: 3rem;
+}
+
+.header3 h1 {
+	margin-bottom: 0.5rem;
+	color: #fff;
+}
+
+.header3 .p-large {
+	margin-bottom: 2rem;
+	color: #dfe5ec;
+}
+
+.header3 .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+/*********************/
+/*    04.3. Header 4    */
+/*********************/
+.header4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
+                url('../img/prawira-village/1.png') center center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header4 .header4-content {
+	padding-top: 8rem;
+	padding-bottom: 2.125rem;
+	text-align: center;
+}
+
+.header4 .text-container {
+	margin-bottom: 3rem;
+}
+
+.header4 h1 {
+	margin-bottom: 0.5rem;
+	color: #fff;
+}
+
+.header4 .p-large {
+	margin-bottom: 2rem;
+	color: #dfe5ec;
+}
+
+.header4 .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+
 
 /*********************/
 /*     05. Intro     */
@@ -863,12 +930,14 @@ input[type='checkbox'] {
 .basic-1 .image-container {
 	overflow: hidden;
 	border-radius: 0.25rem;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .basic-1 .image-container img {
 	margin: 0;
 	border-radius: 0.25rem;
 	transition: all 0.3s;
+	
 }
 
 .basic-1 .image-container:hover img {
@@ -1008,8 +1077,17 @@ input[type='checkbox'] {
 /*************************/
 .accordion .area-1 {
 	height: 27rem;
-	background: url('../img/header-img.jpg') center center no-repeat;
+	/* background: url('../img/pantai-karang-atas/main-page.jpg') center center no-repeat; */
 	background-size: cover;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.accordion .area-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .accordion .accordion-container {
@@ -1196,11 +1274,78 @@ input[type='checkbox'] {
 	margin-bottom: 1.75rem;
 }
 
-.tabs .area-2 {
+/* .tabs .area-2 {
 	height: 27rem;
-	background: url('../img/img1.jpg') center center no-repeat;
+	background: url('../img/bukit-murjumeneng-1.png') center center no-repeat;
 	background-size: cover;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+} */
+
+.tabs {
+    display: flex;
+    align-items: stretch; /* Menyamakan tinggi area-1 dan area-2 */
+    gap: 20px; /* Jarak antara teks dan gambar */
 }
+
+.tabs .area-1 {
+    flex: 1; /* Membuat area teks mengisi ruang yang tersedia */
+}
+
+.tabs .area-2 {
+    flex: 1; /* Membuat gambar menyesuaikan ukuran */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs .area-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	margin-left: -10px;
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .tabs .area-1, 
+    .tabs .area-2 {
+        flex: none;
+        width: 100%;
+    }
+
+	.accordion .area-1 {
+		height: auto;
+        max-height: 300px;
+        margin-left: 0;
+	}
+	.accordion .area-1 img {
+		height: auto;
+        max-height: 300px;
+        margin-left: 0;
+	}
+
+    .tabs .area-2 {
+        height: auto;
+        max-height: 300px;
+        margin-left: 0;
+    }
+    .tabs .area-2 img {
+        height: auto;
+        max-height: 300px;
+        margin-left: 0;
+    }
+
+    .tabs .tabs-container {
+        padding-bottom: 2rem; 
+    }
+}
+
 
 
 /****************************/
@@ -2633,4 +2778,58 @@ a:hover.back-to-top {
 
 .desc-text-justify{
 	text-align: justify;
+}
+
+.prawira-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.prawira-img {
+    max-width: 80%;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .prawira-img {
+        max-width: 95%;
+    }
+}
+
+.prawira-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.prawira-video {
+    width: 72%;
+    height: 450px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .prawira-video {
+        width: 95%;
+        height: 300px;
+    }
+}
+
+
+.button-to-subpage {
+	text-align: center;
+	margin-top: 20px;
 }
